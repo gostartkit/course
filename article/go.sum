@@ -1,0 +1,10 @@
+filippo.io/edwards25519 v1.1.0 h1:FNf4tywRC1HmFuKW5xopWpigGjJKiJSV0Cqo0cJWDaA=
+filippo.io/edwards25519 v1.1.0/go.mod h1:BxyFTGdWcka3PhytdK4V28tE5sGfRvvvRV7EaN4VDT4=
+pkg.gostartkit.com/cmd v0.1.4 h1:iPgDYO4V2X/N1gS32J6wt+XPLnNc0L5dPPy0uDmR6nI=
+pkg.gostartkit.com/cmd v0.1.4/go.mod h1:tx/V4s3txJeGHb31I68bs4H9n0Er165KKAhSDT+v5xE=
+pkg.gostartkit.com/mysql v0.1.2 h1:LYbOzxIFa0VhXfUYk391n4xqUR9DgDhWaHtBq3nSKsI=
+pkg.gostartkit.com/mysql v0.1.2/go.mod h1:rvQbTdOIpzqfbPagkExR69VHcQvq1GEca1sXBsn63fE=
+pkg.gostartkit.com/utils v0.0.15 h1:NybCdTRlKk4Wt+FifZPWWhuTbOVzOFd2oWiVnxyorGw=
+pkg.gostartkit.com/utils v0.0.15/go.mod h1:jJnaluD3girlL6NG2SHfM781aa8OW1FhuZuLAWa4bD0=
+pkg.gostartkit.com/web v0.1.28-0.20240718022957-652ce1c8cad4 h1:zy7D/qvOwj4g/5zA+gIMWcK9o5C07gwmA3u/s0xszEs=
+pkg.gostartkit.com/web v0.1.28-0.20240718022957-652ce1c8cad4/go.mod h1:zeIpQcTeQBdNBKr8WH20y5J1q0A1UAlJ/chsPqA9kVs=

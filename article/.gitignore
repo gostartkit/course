@@ -1,0 +1,17 @@
+
+.DS_Store
+
+/bin/
+/log/
+/vendor/
+/public/
+/storage/
+/database/
+/.config/
+
+env.json
+config.json
+
+dev.bash
+make.bash
+release.bash
