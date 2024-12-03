@@ -31,3 +31,9 @@ bin/article serve
 ```bash
 gsk model category article tag comment articleTag
 ```
+
+### Create api code
+
+```bash
+gsk code
+```
