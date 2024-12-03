@@ -17,6 +17,8 @@ func NewCategory() *Category {
 type Category struct {
 	// @PrimaryKey
 	ID uint64 `json:"id"`
+	// @Comment "parent category id"
+	Ref uint64 `json:"ref"`
 	// @DataType mysql=varchar(127)
 	CategoryName string `json:"categoryName"`
 	// @Comment "-1 deleted 0 pendding 1 valid"

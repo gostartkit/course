@@ -29,5 +29,5 @@ bin/article serve
 ### Create models
 
 ```bash
-gsk model category article tag comment
+gsk model category article tag comment articleTag
 ```
