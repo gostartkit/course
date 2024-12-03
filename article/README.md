@@ -37,3 +37,9 @@ gsk model category article tag comment articleTag
 ```bash
 gsk code
 ```
+
+### Build
+
+```bash
+gsk build
+```

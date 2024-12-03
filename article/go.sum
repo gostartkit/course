@@ -6,5 +6,5 @@ pkg.gostartkit.com/mysql v0.1.2 h1:LYbOzxIFa0VhXfUYk391n4xqUR9DgDhWaHtBq3nSKsI=
 pkg.gostartkit.com/mysql v0.1.2/go.mod h1:rvQbTdOIpzqfbPagkExR69VHcQvq1GEca1sXBsn63fE=
 pkg.gostartkit.com/utils v0.0.15 h1:NybCdTRlKk4Wt+FifZPWWhuTbOVzOFd2oWiVnxyorGw=
 pkg.gostartkit.com/utils v0.0.15/go.mod h1:jJnaluD3girlL6NG2SHfM781aa8OW1FhuZuLAWa4bD0=
-pkg.gostartkit.com/web v0.1.28-0.20240718022957-652ce1c8cad4 h1:zy7D/qvOwj4g/5zA+gIMWcK9o5C07gwmA3u/s0xszEs=
-pkg.gostartkit.com/web v0.1.28-0.20240718022957-652ce1c8cad4/go.mod h1:zeIpQcTeQBdNBKr8WH20y5J1q0A1UAlJ/chsPqA9kVs=
+pkg.gostartkit.com/web v0.1.29 h1:YP35DsoXUtQ6EvJjAvyq5+WLXdE3gBd5F+3hl+m4eLo=
+pkg.gostartkit.com/web v0.1.29/go.mod h1:zeIpQcTeQBdNBKr8WH20y5J1q0A1UAlJ/chsPqA9kVs=
