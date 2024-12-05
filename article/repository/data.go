@@ -35,7 +35,7 @@ func (r *DataRepository) GetAuthByAccessToken(accessToken string) (*utils.Auth, 
 
 	auth := utils.CreateAuth()
 
-	err = web.TryGet(config.AuthUrl(), accessToken, auth, 2)
+	err = web.Get(config.AuthUrl(), accessToken, auth)
 
 	if err != nil {
 		auth.Release()
