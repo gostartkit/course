@@ -1,9 +1,9 @@
 package contract
 
-import "app.gostartkit.com/go/article/model"
+import "pkg.gostartkit.com/utils"
 
 // DataRepository interface
 type DataRepository interface {
 	// GetAuthByAccessToken get auth by accessToken
-	GetAuthByAccessToken(accessToken string) (*model.Auth, error)
+	GetAuthByAccessToken(accessToken string) (*utils.Auth, error)
 }

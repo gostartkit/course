@@ -5,7 +5,7 @@ import (
 
 	"app.gostartkit.com/go/article/config"
 	"app.gostartkit.com/go/article/contract"
-	"app.gostartkit.com/go/article/model"
+	"pkg.gostartkit.com/utils"
 	"pkg.gostartkit.com/web"
 )
 
@@ -29,13 +29,13 @@ type DataRepository struct {
 }
 
 // GetAuthByAccessToken get auth by accessToken
-func (r *DataRepository) GetAuthByAccessToken(accessToken string) (*model.Auth, error) {
+func (r *DataRepository) GetAuthByAccessToken(accessToken string) (*utils.Auth, error) {
 
 	var err error
 
-	auth := model.CreateAuth()
+	auth := utils.CreateAuth()
 
-	err = web.Get(config.AuthUrl(), accessToken, auth)
+	err = web.TryGet(config.AuthUrl(), accessToken, auth, 2)
 
 	if err != nil {
 		auth.Release()
