@@ -32,7 +32,7 @@ bin/article serve
 gsk model category article comment tag articleTag
 ```
 
-### Models
+### Update Models
 
 ```go
 // Category model
