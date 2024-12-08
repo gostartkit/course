@@ -20,5 +20,9 @@ var (
 func Init(app *web.Application) {
 	_once.Do(func() {
 		dataRoute(app, _prefix)
+		articleRoute(app, _prefix)
+		categoryRoute(app, _prefix)
+		commentRoute(app, _prefix)
+		tagRoute(app, _prefix)
 	})
 }
