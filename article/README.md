@@ -106,7 +106,7 @@ type ArticleTag struct {
 }
 ```
 
-### Create api code
+### Code
 
 ```bash
 gsk code
