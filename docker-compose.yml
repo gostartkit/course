@@ -1,0 +1,15 @@
+services:
+
+    database:
+      image: mariadb
+      container_name: app-database
+      volumes:
+        - data:/var/lib/mysql
+      restart: always
+      environment:
+        - MYSQL_ROOT_PASSWORD=GoStartKit.com
+      ports:
+        - "3306:3306"
+
+volumes:
+  data:
