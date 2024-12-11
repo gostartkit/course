@@ -25,8 +25,8 @@ const (
 	_driver    = "mysql"
 	_host      = "127.0.0.1"
 	_port      = 3306
-	_database  = "article"
-	_username  = "article"
+	_database  = "gskctl-article"
+	_username  = "gskctl-article"
 	_charset   = "utf8"
 	_collation = "utf8_general_ci"
 )
