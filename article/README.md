@@ -96,7 +96,7 @@ type Tag struct {
 }
 
 // ArticleTag model
-// @Entity tableName="article_tags"
+// @Entity tableName="article_tag"
 // @Ignore
 type ArticleTag struct {
 	// @PrimaryKey
