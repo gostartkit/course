@@ -2,8 +2,8 @@
 set -e
 
 SRC=./article/.config/gsk/docusaurus/
-BASE=~/Dev/work/gostartkit/www/gostartkit.com/docusaurus
-DIST=$BASE/docs/golang/example/article-ce/
+BASE=~/Dev/work/gostartkit/www/gostartkit.com/
+DIST=$BASE/docusaurus/docs/golang/example/article-ce/
 
 
 gsk doc
@@ -12,4 +12,4 @@ mkdir -p $DIST
 
 cp $SRC/* $DIST
 
-cd $BASE && pnpm start
+# cd $BASE && ./dev.bash
