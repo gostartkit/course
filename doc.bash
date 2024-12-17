@@ -12,4 +12,4 @@ mkdir -p $DIST
 
 cp $SRC/* $DIST
 
-# cd $BASE && ./dev.bash
+cd $BASE && ./dev.bash
