@@ -345,7 +345,7 @@ func (r *ArticleRepository) GetArticlesByTagID(tagID uint64, filter string, orde
 
 	sqlx.WriteString("SELECT c.`id`, c.`category_id`, c.`article_name`, c.`status`, c.`created_at`, c.`updated_at` ")
 	sqlx.WriteString("FROM `articles` c ")
-	sqlx.WriteString("INNER JOIN `article_tags` r on c.`id` = r.`article_id` ")
+	sqlx.WriteString("INNER JOIN `article_tag` r on c.`id` = r.`article_id` ")
 	sqlx.WriteString("WHERE r.`tag_id` = ? AND `status` >= 0 ")
 
 	args = append(args, tagID)
@@ -415,7 +415,7 @@ func (r *ArticleRepository) GetArticleByTagID(articleID uint64, tagID uint64) (*
 
 	sqlx := "SELECT c.`id`, c.`category_id`, c.`article_name`, c.`status`, c.`created_at`, c.`updated_at` " +
 		"FROM `articles` c " +
-		"INNER JOIN `article_tags` r on c.`id` = r.`article_id` " +
+		"INNER JOIN `article_tag` r on c.`id` = r.`article_id` " +
 		"WHERE c.`id` = ? AND r.`tag_id` = ? AND c.`status` >= 0 "
 
 	row := queryRow(sqlx, articleID, tagID)
@@ -438,7 +438,7 @@ func (r *ArticleRepository) GetArticleByTagID(articleID uint64, tagID uint64) (*
 // LinkArticleTags return rowsAffected int64, error
 func (r *ArticleRepository) LinkArticleTags(articleID uint64, tagID ...uint64) (int64, error) {
 
-	sqlx := "INSERT INTO `article_tags` " +
+	sqlx := "INSERT INTO `article_tag` " +
 		"(`article_id`, `tag_id`) " +
 		"VALUES(?, ?)"
 
@@ -488,7 +488,7 @@ func (r *ArticleRepository) LinkArticleTags(articleID uint64, tagID ...uint64) (
 // UnLinkArticleTags return rowsAffected int64, error
 func (r *ArticleRepository) UnLinkArticleTags(articleID uint64, tagID ...uint64) (int64, error) {
 
-	sqlx := "DELETE FROM `article_tags` WHERE `article_id` = ? AND `tag_id` = ?"
+	sqlx := "DELETE FROM `article_tag` WHERE `article_id` = ? AND `tag_id` = ?"
 
 	tx, err := begin()
 
